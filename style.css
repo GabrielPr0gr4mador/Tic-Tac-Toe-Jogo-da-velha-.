@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+body{
+    font-family: 'Sigmar', Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: linear-gradient();
+    height: 1vh;
+}
+
+:root{
+    --button-font: 'Sigmar', Arial, Helvetica, sans-serif;
+    --button-color: black;
+    --button-backgrond: linear-gradient(45deg, white 50%, gray);
+}
+
+h1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    color: white;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#container div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+}
+
+#container div:hover{
+    box-shadow: -3px -3px 5px white,
+    3px 3px 5px white;
+}
+
+.mark{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px red,
+    -1px -1px 5px blue;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 3;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+fieldset button {
+    align-self: center;
+    padding: 10px;
+    width: 100px;
+}
+
+fieldset:hover{
+    border-left: 2px solid blue;
+    border-right: 2px solid red;
+}
+input{
+    border-radius: 10px;
+    font-family: 'Sigmar';
+}
+
+
+input:focus{
+    box-shadow: 1px 1px 10px white,
+    -1px -1px 10px white;
+    outline: none;
+    border: 3px solid black;
+}
+
+.choose{
+    display: flex;
+    width: 50px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    font-family: var(--button-font);
+    color: var(--button-color);
+    background-image: var(--button-backgrond);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-image: linear-gradient(45deg, blue, red);
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+
+button:active{
+    transform: rotate(360deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+button:focus{
+    transform: rotate(360deg);
+    transition: transform 0.2s ease-in-out;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid red;  
+    outline: none;
+}
+
+
+
+.align-button{
+    display: flex;
+    gap: 10px;
+}
+
+#One{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    align-items: start;
+    color: blue;
+    text-shadow: 2px 2px 5px lightskyblue,
+    -2px -2px 5px blue;
+}
+
+#Two{
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+    align-items: start;
+    color: red;
+    text-shadow: 1px 1px 3px pink,
+    -1px -1px 3px red;
+}
+
+
+#One, #Two {
+    width: fit-content; 
+    justify-self: center; 
+    padding: 5px; 
+}
+
+
+
+h1:hover{
+    color: gold;
+    font-size: 34px;
+    cursor: pointer;
+    transition: scale(1.1);
+    text-shadow: 2px 2px 2px white;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px red,
+    -2px -2px 3px blue;
+}
+
+#h2one{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+#h2two{
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+#player1{
+    color: blue;
+}
+
+
+#player2{
+    color: red;
+}
+
+#player1:focus{
+    border: 2px solid blue;
+}
+
+#player2:focus{
+    border: 2px solid red;
+}
+
+.winner{
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 768px){
+    #One{
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    #Two{
+        display: grid;
+        grid-column: 3;
+        grid-row: 1;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    fieldset{
+        margin-top: 80px;
+    }
+
+   
+}

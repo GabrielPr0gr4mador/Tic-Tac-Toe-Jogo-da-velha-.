@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TIC TAC TOE</h1>
+    <div id="container">
+    <div class="mark" data-index="0"></div>
+    <div class="mark" data-index="1"></div>
+    <div class="mark" data-index="2"></div>
+    <div class="mark" data-index="3"></div>
+    <div class="mark" data-index="4"></div>
+    <div class="mark" data-index="5"></div>
+    <div class="mark" data-index="6"></div>
+    <div class="mark" data-index="7"></div>
+    <div class="mark" data-index="8"></div>
+    </div>
+     
+ 
+    <h1 id="One">Player One</h1>
+    <h2 id="h2one"></h2>
+   
+    <h1 class="score" id="Two">Player Two</h1>
+    <h2 class="score" id="h2two"></h2>
+   
+    
+        <fieldset>
+            <div>
+            <label for="player1">Player one name:</label>
+            <input type="text" id="player1"> 
+            </div>
+            <div>
+            <label for="player2">Player two name:</label>
+            <input type="text" id="player2"> 
+            </div>
+            <div class="align-button">
+            <h3>PLayer one choice!</h3>
+            <button class="choose" id="X">X</button>
+            <button class="choose" id="O">O</button>
+            </div>
+            <div class="align-button">
+            <button id="start">Start</button>
+            <button id="restart">Clear</button>
+            <button id="clear">Restart</button>
+            </div>
+        </fieldset>
+  
+    <script src="script.js"></script>
+</body>
+</html>

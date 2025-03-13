@@ -1,0 +1,22 @@
+1- primeiro objeto player vai guardar o nome  e o simbolo escolhido.
+
+----------------------------------------------------------------------------------------------------- 
+
+2- segundo e principal objeto que vai manipular o doom e marcar de acordo com o objeto
+de cada player, sempre que um player marcar a próxima escolha
+será do outro, implantar a lógica para que caso xxx ou ooo na vertical, horizontal
+ou diagonal deverá resultar na vitória
+do jogador dono do símbolo que alcançou este resultado.
+
+toda essa lógica estará provavelmente no mesmo objeto, ela vai 
+acessar as informações do primeiro objeto que possui as player's 
+informations. 
+
+------------------------------------------------------------------------------------------------------
+
+3 - no final lógica dos botões para escolha de símbolo, quando um
+player escolher um símbolo automaticamente o outro será o símbolo 
+do outro player sem necessidade de escolha, botões de start para
+começar o jogo e de restart para reiniciar. 
+
+4 - implementar melhorias visuais conforme for testando o jogo.
